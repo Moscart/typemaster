@@ -49,7 +49,14 @@ const config: Config = {
   				'3': 'hsl(var(--chart-3))',
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
-  			}
+  			},
+				custom: {
+					orange: 'hsl(var(--orange))',
+					"light-orange": 'hsl(var(--light-orange))',
+					"dark-gray": 'hsl(var(--dark-gray))',
+					gray: 'hsl(var(--gray))',
+					"light-gray": 'hsl(var(--light-gray))',
+				}
   		},
   		borderRadius: {
   			lg: 'var(--radius)',

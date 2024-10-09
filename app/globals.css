@@ -2,16 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
-
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -39,6 +29,12 @@ body {
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
+
+    --orange: 22 89% 52%;
+    --light-orange: 22 100% 69%;
+    --dark-gray: 220 50% 17%;
+    --gray: 221 23% 58%;
+    --light-gray: 198 28 93%;
   }
   .dark {
     --background: 240 10% 3.9%;
