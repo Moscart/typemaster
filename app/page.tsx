@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Logo from "@/public/assets/shared/logo.svg";
 import ICompatible from "@/public/assets/shared/icon-compatible.svg";
@@ -19,7 +21,12 @@ export default function Home() {
   return (
     <div className="">
       <header className="max-w-md md:max-w-4xl xl:max-w-[1110px] mx-auto px-6 pt-6 md:px-10 md:pt-10 xl:px-0 xl:pt-14 flex justify-between items-center">
-        <Image src={Logo} alt="Logo Typemaster" className="size-10" />
+        <Image
+          onDragStart={(e) => e.preventDefault()}
+          src={Logo}
+          alt="Logo Typemaster"
+          className="size-10"
+        />
         <Button className="shadow-none uppercase bg-custom-light-gray text-custom-dark-gray font-bold text-[1rem] leading-[1.625rem] h-auto px-[14px] py-3 md:py-4 md:px-7 rounded-[0.5rem] hover:bg-custom-dark-gray hover:text-white">
           Pre-Order Now
         </Button>
@@ -46,16 +53,19 @@ export default function Home() {
           <div className="mt-16 md:mt-0 overflow-hidden">
             <div className="-right-6 md:right-0 relative">
               <Image
+                onDragStart={(e) => e.preventDefault()}
                 src={ImageKeyboard}
                 alt="Typemaster Keyboard"
                 className="rounded-s-[1.25rem] md:hidden"
               />
               <Image
+                onDragStart={(e) => e.preventDefault()}
                 src={ImageKeyboardTablet}
                 alt="Typemaster Keyboard"
                 className="rounded-s-[1.25rem] hidden md:block md:h-[425px] object-cover object-left xl:hidden"
               />
               <Image
+                onDragStart={(e) => e.preventDefault()}
                 src={ImageKeyboardDesktop}
                 alt="Typemaster Keyboard"
                 className="rounded-s-[1.25rem] xl:rounded-[1.25rem] hidden md:h-[425px] xl:h-[480px] object-cover object-left xl:block"
@@ -68,16 +78,19 @@ export default function Home() {
             <div className="flex gap-6 md:gap-[30px] relative -left-6 md:left-0">
               <div className="flex-grow relative rounded-e-[1.25rem] md:rounded-[1.25rem] overflow-hidden">
                 <Image
+                  onDragStart={(e) => e.preventDefault()}
                   src={ImagePhone}
                   alt="Typemaster Keyboard with Phone"
                   className="mix-blend-multiply opacity-75 md:hidden"
                 />
                 <Image
+                  onDragStart={(e) => e.preventDefault()}
                   src={ImagePhoneTablet}
                   alt="Typemaster Keyboard with Phone"
                   className="mix-blend-multiply opacity-75 hidden md:block xl:hidden"
                 />
                 <Image
+                  onDragStart={(e) => e.preventDefault()}
                   src={ImagePhoneDesktop}
                   alt="Typemaster Keyboard with Phone"
                   className="mix-blend-multiply opacity-75 hidden xl:block"
@@ -86,16 +99,19 @@ export default function Home() {
               </div>
               <div className="flex-grow">
                 <Image
+                  onDragStart={(e) => e.preventDefault()}
                   src={ImageGlass}
                   alt="Typemaster Keyboard with Glass"
                   className="rounded-[1.25rem] md:hidden"
                 />
                 <Image
+                  onDragStart={(e) => e.preventDefault()}
                   src={ImageGlassTablet}
                   alt="Typemaster Keyboard with Glass"
                   className="rounded-[1.25rem] hidden md:block xl:hidden"
                 />
                 <Image
+                  onDragStart={(e) => e.preventDefault()}
                   src={ImageGlassDesktop}
                   alt="Typemaster Keyboard with Glass"
                   className="rounded-[1.25rem] hidden xl:block"
@@ -119,7 +135,12 @@ export default function Home() {
           <div className="flex flex-col md:grid md:grid-cols-2 xl:grid-cols-4 gap-16 md:gap-[72px] xl:gap-[30px]">
             <div className="flex flex-col md:items-start items-center text-center md:text-left md:max-w-[281px]">
               <div className="bg-custom-orange aspect-square w-[65px] rounded-2xl flex justify-center items-center">
-                <Image src={ICompatible} alt="Logo Typemaster" className="" />
+                <Image
+                  onDragStart={(e) => e.preventDefault()}
+                  src={ICompatible}
+                  alt="Logo Typemaster"
+                  className=""
+                />
               </div>
               <h2 className="uppercase font-black text-2xl leading-[1.75rem] mt-12 md:mt-10 xl:mt-12">
                 Highly <span className="block">Compactible</span>
@@ -132,7 +153,12 @@ export default function Home() {
             </div>
             <div className="flex flex-col md:items-start items-center text-center md:text-left md:max-w-[281px]">
               <div className="bg-custom-orange aspect-square w-[65px] rounded-2xl flex justify-center items-center">
-                <Image src={IBluetooth} alt="Logo Typemaster" className="" />
+                <Image
+                  onDragStart={(e) => e.preventDefault()}
+                  src={IBluetooth}
+                  alt="Logo Typemaster"
+                  className=""
+                />
               </div>
               <h2 className="uppercase font-black text-2xl leading-[1.75rem] mt-12 md:mt-10 xl:mt-12">
                 Wireless <span className="block">With Bluetooth</span>
@@ -145,7 +171,12 @@ export default function Home() {
             </div>
             <div className="flex flex-col md:items-start items-center text-center md:text-left md:max-w-[281px]">
               <div className="bg-custom-orange aspect-square w-[65px] rounded-2xl flex justify-center items-center">
-                <Image src={IBattery} alt="Logo Typemaster" className="" />
+                <Image
+                  onDragStart={(e) => e.preventDefault()}
+                  src={IBattery}
+                  alt="Logo Typemaster"
+                  className=""
+                />
               </div>
               <h2 className="uppercase font-black text-2xl leading-[1.75rem] mt-12 md:mt-10 xl:mt-12">
                 High Capacity <span className="block">Battery</span>
@@ -158,7 +189,12 @@ export default function Home() {
             </div>
             <div className="flex flex-col md:items-start items-center text-center md:text-left md:max-w-[281px]">
               <div className="bg-custom-orange aspect-square w-[65px] rounded-2xl flex justify-center items-center">
-                <Image src={ILight} alt="Logo Typemaster" className="" />
+                <Image
+                  onDragStart={(e) => e.preventDefault()}
+                  src={ILight}
+                  alt="Logo Typemaster"
+                  className=""
+                />
               </div>
               <h2 className="uppercase font-black text-2xl leading-[1.75rem] mt-12 md:mt-10 xl:mt-12">
                 RGB Backlit <span className="block">Modes</span>
